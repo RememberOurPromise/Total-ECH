@@ -67,12 +67,12 @@
 
 | 接口类型 | URL 格式 / 参数 | 说明与示例 |
 |---|---|---|
-| **纯净转发 DoH** | `https://example.com/doh-test` | 仅转发，DNS记录不作任何修改（直接转发 Google DoH）。 |
-| **标准 ECH DoH** | `https://example.com/doh-ech-test` | 不进行优选 IP 替换的 DoH。 |
+| **标准 ECH DoH** | `https://example.com/doh-ech-test` | 添加 ECH 但不进行优选 IP 替换的 DoH。 |
 | **附加优选域名** | `?cf=[优选域名]` | 示例：`https://example.com/doh-ech-test?cf=youxuan.example.com`<br>*(注：必须填写真正返回 CF IP 的域名)* |
 | **附加优选 IPv4** | `?ip4=[IPv4地址]` | 示例：`https://example.com/doh-ech-test?ip4=104.18.11.118` |
 | **附加优选 IPv6** | `?ip6=[IPv6地址]` | 示例：`https://example.com/doh-ech-test?ip6=2606:4700::6812:a76` |
 | **附加优选 IPv4+IPv6** | `?ip4=[IPv4地址]&ip6=[IPv6地址]` | 示例：`https://example.com/doh-ech-test?ip4=104.18.11.118&ip6=2606:4700::6812:a76` |
+| **纯净转发 DoH** | `https://example.com/doh-test` | 仅转发，DNS记录不作任何修改（直接转发 Google DoH）。 |
 
 **特殊域名解析：**  `cf.ech`  解析其 HTTPS 记录会返回 CF 通用 HTTPS 记录 (2-3小时 TTL)，**适合 Xray 使用**。 
 
