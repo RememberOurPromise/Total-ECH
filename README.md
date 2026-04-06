@@ -49,7 +49,7 @@
 
 登录 Cloudflare 控制台，进入 Workers 页面并新建一个 Worker 。
 
-复制[_worker.js](https://github.com/RememberOurPromise/Total-ECH/blob/main/_worker.js)代码粘贴到在线编辑器中。
+复制[_worker.js](https://github.com/RememberOurPromise/Total-ECH/blob/main/_worker.js)代码粘贴到在线编辑器中，在此您可以自定义path。
 
 点击“保存并部署”即可完成手动部署。
 
